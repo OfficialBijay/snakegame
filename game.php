@@ -5,7 +5,7 @@ session_start();
 <html>
 
 <head>
-  <title>Snake Game</title>
+  <title>Snake Game | Play</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="./CSS/bootstrap/css/bootstrap.min.css" />
   <link href="./CSS/style.css" rel="stylesheet" />
