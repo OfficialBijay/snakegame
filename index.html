@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Game | Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="./CSS/style.css" rel="stylesheet">
+    <link href="./CSS/form.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Snake Game</h1>
+    <form class="main" method="post" action="./PHP/login_submit.php">
+    <div class="login-box" id="login_box">
+        <h1>Login</h1>
+        <div class="text-box">
+           <i class="fa fa-user" aria-hidden="true"></i>
+           <input type="text" placeholder="Username" name="username" autofocus required>
+      </div>
+      <div class="text-box">
+           <i class="fa fa-lock" aria-hidden="true"></i>
+           <input type="password" placeholder="Password" name="password" required>
+      </div>
+      <button>Login</button>
+      <p>Do'nt Have an Account ? <button class="js" id="js1">Register Here!</button></p>
+      <p><a href="./game.php">Play</a> as a Guest with <strong>Limited Resources </strong>instead.</p>
+    </div>
+    </form>
+
+    <form method="post" action="./PHP/register_submit.php">
+    <div class="registration-box" id="registration_box">
+        <h1>Registration</h1>
+        <div class="text-box">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Full Name" autocomplete="name" name="full_name" autofocus required>
+       </div>
+       <div class="text-box">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="email" placeholder="Enter Email" name="email" required>
+       </div>
+        <div class="text-box">
+           <i class="fa fa-user" aria-hidden="true"></i>
+           <input type="text" placeholder="Username" name="username" required>
+      </div>
+      <div class="text-box">
+           <i class="fa fa-lock" aria-hidden="true"></i>
+           <input type="password" placeholder="Password" name="password" required>
+      </div>
+      <br>
+      <button>Register</button>
+      <p>Already Have an Account ? <button class="js" id="js2">Login Here!</button></p>
+    </div>
+    </form>
+
+</body>
+<script>
+    document.getElementById("js1").addEventListener("click",click1);
+    document.getElementById("js2").addEventListener("click",click2);
+    // document.getElementById("guest").addEventListener("click",click3);
+    
+
+    function click1(){
+     document.getElementById("registration_box").style.display="block";
+     document.getElementById("login_box").style.display="none";
+ }
+
+ function click2(){
+     document.getElementById("login_box").style.display="block";
+     document.getElementById("registration_box").style.display="none";
+ }
+
+//  function click3(){
+//     document.getElementById("guest").addEventListener("click",
+//     function(){
+//         document.getElementById("log-out").style.display="none";
+//     })
+//      window.location.href="game.php";
+//  }
+</script>
+</html>
